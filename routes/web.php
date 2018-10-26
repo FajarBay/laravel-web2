@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/index', function () {
+    return view('index');
+});
+
+Route::get('/halamandua', function () {
+    return view('halamandua');
+});
+Route::resource('halaman', 'lara');
+Route::get('lara/tambah', 'lara@tambah');
+
+Route::resource('mahasiswa', 'Mahasiswa');
+
+Route::resource('user_models', 'User');
+
+Route::resource('create', 'Mahasiswa');
