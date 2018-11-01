@@ -54,6 +54,9 @@
             <li>
                 <a href="/user_models">User</a>
             </li>
+            <li>
+                <a href="usr_create">- Create</a>
+            </li>
         </ul>
     </aside>
 

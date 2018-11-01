@@ -26,7 +26,12 @@ Route::resource('halaman', 'lara');
 Route::get('lara/tambah', 'lara@tambah');
 
 Route::resource('mahasiswa', 'Mahasiswa');
+Route::get('/mhs_create', function () {
+    return view('mhs_create');
+});
 
 Route::resource('user_models', 'User');
-
-Route::resource('create', 'Mahasiswa');
+Route::resource('usr_create', 'User');
+Route::get('/usr_create', function () {
+    return view('usr_create');
+});
